@@ -27,3 +27,12 @@
 - Evidencia: 15/15 pruebas. En navegador local real: carga sin error de app visible, render de escritorio, palabra perro armada con botones, escritura comparada, pronunciación registrada manualmente, celebración tras 3 estaciones, modo 12–16 y reinicio. La UI de 1348 px se inspeccionó visualmente.
 - El navegador ahora abre la vista local; el bloqueo anterior no afectó esta copia y configuración. No implica validación clínica ni prueba en móvil físico.
 - Etapa activa E3. Próxima acción: audio cancelable y borradores temporales del cuaderno, servidor portable.
+
+## E3 completada — Captura y estabilidad
+
+- Captura extraída a audio.js con cancelación por generación, cierre de pistas y callbacks ligados a cada recorder; limpieza al navegar/reconstruir actividad.
+- Cuatro pruebas de captura: permiso tardío, audio normal, cancelación durante grabación, límite temporal/error de permiso. No se abrió un micrófono real ni se pidió acceso al usuario.
+- Borradores del cuaderno por texto/estilo durante la sesión; al volver a una palabra se recuperan. Capacidad: 100 modelos, máximo 4.000 puntos por trazo antes de reducir muestras; repintado con requestAnimationFrame. No persiste dibujos al cerrar.
+- Servidor usa ruta real para bloquear enlaces simbólicos externos; métodos GET/HEAD; tipos MIME PNG; dev portable con --host y puerto efímero para pruebas.
+- Evidencia: 20/20 tests; sintaxis correcta. Flujos UI finales se revisarán al completar E4 (para no probar con la caché vieja).
+- Etapa activa E4: instalación y offline con cambio de versión explícito.

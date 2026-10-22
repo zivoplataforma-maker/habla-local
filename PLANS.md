@@ -39,7 +39,7 @@ Evolucionar la versión aprobada hacia un espacio visual y lúdico para 4–16 a
 - Recuperación: volver a estilos y marcado de base manteniendo E1.
 
 ### E3 — Compatibilidad y estabilidad esenciales (P2)
-- [ ] Objetivo: prevenir callbacks obsoletos de audio, dar control a trazos, hacer servidor/dev portables.
+- [x] Objetivo: prevenir callbacks obsoletos de audio, dar control a trazos, hacer servidor/dev portables.
 - Dependencias: E2. Archivos: app.js, server.cjs, tests.
 - Conservar: micrófono solo por acción, sin reconocimiento remoto. Riesgo: limpieza prematura del audio.
 - Aceptación: permisos tardíos no activan micro al salir; conservar borrador de trazos por palabra durante sesión; errores de voz no acreditan escucha; control de entrada y codificación del servidor.

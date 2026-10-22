@@ -1,10 +1,10 @@
 {
   "name": "habla-local",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "test": "node --test tests/*.test.cjs",
     "start": "node server.cjs",
-    "dev": "HOST=0.0.0.0 node server.cjs"
+    "dev": "node server.cjs --host 0.0.0.0"
   }
 }
