@@ -1,9 +1,9 @@
 'use strict';
-const VERSION='1.1.1';
+const VERSION='1.2.0';
 const SCOPE=self.registration.scope;
 const PREFIX='habla:'+encodeURIComponent(SCOPE)+':';
 const CACHE=PREFIX+VERSION;
-const ASSETS=['./','./index.html','./style.css','./adventure.css','./atelier.css','./assets/letter-workshop.svg','./assets/fonts/bricolage.woff','./assets/fonts/OFL.txt','./app.js','./core.js','./play.js','./storage.js','./audio.js','./pwa.js','./curated.js','./data/words.js','./data/license','./data/LICENSE.md','./data/MPL-2.0.txt','./manifest.json','./icon.svg','./assets/luma.svg','./assets/icon-192.png','./assets/icon-512.png','./assets/apple-touch-icon.png'];
+const ASSETS=['./','./index.html','./style.css','./adventure.css','./atelier.css','./assets/letter-workshop.svg','./assets/fonts/bricolage.woff','./assets/fonts/OFL.txt','./app.js','./icons.js','./report.js','./tracing.js','./assets/social-card.png','./core.js','./play.js','./storage.js','./audio.js','./pwa.js','./curated.js','./data/words.js','./data/license','./data/LICENSE.md','./data/MPL-2.0.txt','./manifest.json','./icon.svg','./assets/luma.svg','./assets/icon-192.png','./assets/icon-512.png','./assets/apple-touch-icon.png'];
 const URLS=ASSETS.map(p=>new URL(p,SCOPE).href);
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(URLS))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith(PREFIX)&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

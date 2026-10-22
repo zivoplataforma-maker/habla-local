@@ -69,3 +69,13 @@ Cuando hay una versión nueva, se ofrece **Aplicar actualización y recargar**. 
 No hay cuentas, anuncios ni analítica propia. Las prácticas quedan en el navegador. Al visitar la web pública, GitHub recibe solicitudes de archivos y registra IP por seguridad. En copias locales no se necesita contactar a GitHub para practicar. Los enlaces externos y voces remotas tienen sus propios proveedores.
 
 La herramienta no reemplaza evaluación o tratamiento fonoaudiológico. Elegí objetivos y material con tu profesional. Las variantes del habla argentina no son errores. No se han validado clínicamente los ejercicios ni la caligrafía.
+
+## Opciones nuevas 1.2.0
+
+En Practicar, abrí «A tu medida» para cambiar grupo, extensión y velocidad. Podés abrirlo con Enter o Espacio. Todas las opciones anteriores siguen allí.
+
+En Mi recorrido, elegí Desde/Hasta y pulsá Ver resumen; por defecto son los últimos siete días de calendario del dispositivo. «Todo el registro» usa las fechas del historial conservado. «Imprimir / guardar PDF» abre la impresión del sistema: elegí Guardar como PDF si tu dispositivo lo ofrece. No genera un archivo automáticamente ni envía el resumen. Los conteos describen actividades; no aciertos ni evolución clínica. Podés compartirlo vos después de revisarlo.
+
+En Mi cuaderno, abrí «Mirar cómo se forma una letra». Elegí una de las 27 mayúsculas o usá la inicial del texto. Ver movimiento reproduce el trazo elegido; Pausar lo detiene y conserva su posición. Trazo siguiente/anterior permite recorrer el modelo sin animación; Volver al inicio reinicia la demostración. El círculo numerado marca el inicio y el punto móvil muestra la dirección. Calma visual o movimiento reducido desactivan la reproducción y conservan los pasos manuales. Salir, cerrar el panel o cambiar letra pausa.
+
+Los trazos son modelos propios de imprenta mayúscula y un ejemplo posible, sin validación escolar o clínica. Seguí la forma elegida por tu docente/profesional. La guía no corrige tu dibujo, no cambia el modelo libre y no registra práctica por mirar. Minúsculas y cursiva guiadas no están incluidas.

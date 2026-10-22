@@ -43,3 +43,14 @@ Se detectó y corrigió overflow de la práctica en 320 px mediante min-width:0 
 La versión publicada anterior se desplegó correctamente desde `248648d`; la revisión editorial está en `33ecf5c`. La implementación parte de `33ecf5c` en una copia aislada, rama local `mejora-infantil-local`. El titular autorizó posteriormente actualizar GitHub, incluido el flujo de publicación existente. Los cambios y evidencias de publicación se registran en PROGRESO_CODEX.md.
 
 No se añadieron dependencias, servicios de terceros, cuentas, analítica ni permisos remotos. No se detectaron archivos de secretos en el proyecto. La ausencia de hallazgos en esta revisión no equivale a una auditoría externa de seguridad.
+
+## Revisión 1.2.0 (22/10/2026)
+29 tests y build aprobados: se agregan fechas locales, conteos/normalización/no mutación de resumen y alfabeto de guía. 102 IDs estáticos únicos, recursos completos, caché 1.2.0 incluye módulos nuevos e imagen social.
+
+Chrome cloud: filtros cerrados inicialmente, apertura con Enter, selección R fuerte, acción del registro vacío, resumen vacío y luego perro/Pronunciación con conteo 1. Error de fecha invertida claro. Botón imprimir ejecutado; diálogo/PDF final no observable en este entorno. No afirmar PDF físico validado.
+
+Guía: Ñ con cuatro pasos por Enter, pausa true/false, Calma bloquea reproducción, navegación pausa, inicial ñandú selecciona Ñ. Las 27 formas se revisaron visualmente en una lámina temporal. Se mantuvieron pruebas previas del lienzo/almacenamiento; no se borró historial.
+
+Seis secciones a 320/390/768/1024: scrollWidth=clientWidth, también guía y resumen abiertos. Escritorio revisado visualmente. No equivale a auditoría WCAG ni pruebas físicas. Imagen social PNG 1200×630 inspeccionada. No se verificó caché de previews de WhatsApp/Facebook.
+
+Usuario reporta primera prueba Android/Chrome, no exhaustiva. Pruebas físicas más amplias se harán con amigos; pauta en PRUEBAS_AMIGOS.md. Sin nuevas dependencias ni peticiones externas desde el diseño, guía o resumen.

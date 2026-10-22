@@ -20,7 +20,7 @@ Para ampliar, primero se debe acordar el inventario (lemas, flexiones, expresion
 
 ## Mejoras futuras que requieren validación
 
-- Formación de letras con orden de trazos revisado por docente/especialista.
+- Revisión docente/especialista de la guía de 27 mayúsculas incluida en 1.2.0; ampliar a minúsculas/cursiva requiere modelos específicos.
 - Ilustraciones y audio humano por palabra; los emojis actuales son ilustrativos.
 - Auditoría completa de accesibilidad con tecnologías asistivas. La implementación incluye controles nativos, foco visible y reducción de movimiento, pero no acredita conformidad WCAG.
 - Persistencia de dibujos/audio: hoy solo descarga voluntaria; cualquier cambio debe considerar privacidad y almacenamiento de menores.

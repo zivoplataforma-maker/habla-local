@@ -99,3 +99,6 @@ Resumen local por fechas con actividades, días y palabras, tabla imprimible y a
 ### E10 implementada y verificada
 Guía opcional cerrada por defecto con 27 mayúsculas vectoriales propias (incluye Ñ), inicios numerados, instrucciones, animación de 2,2 s por trazo solicitada por usuario, pausa, pasos, reinicio e inicial del texto. Sin librerías, sin guardar observación como práctica. Se mantiene lienzo y sus borradores/modelos.
 29 tests pasan. QA Chrome: Ñ cuatro trazos por Enter, pausa cambia aria-pressed true/false, Calma desactiva animación con aviso; salir a Practicar pausa. No se afirma método escolar universal ni validación clínica. Minúsculas y cursiva guiadas no incluidas; alcance claramente visible.
+
+### E11 verificación local completada — publicación pendiente
+Versión 1.2.0, 29/29 tests y build, 102 IDs únicos. QA seis secciones a 320/390/768/1024 sin overflow, guía/resumen abiertos; alfabeto completo inspeccionado. Se documentan límites de impresión, dispositivos físicos y revisión profesional. SVG estables en navegación/estaciones/favoritas/acciones principales; caché incluye icons/report/tracing y social PNG. Pauta para amigos creada. No se alteran módulos core/storage/audio ni formato de copias. Próxima acción: verificar HEAD remoto, subir commits de etapas con lease y comprobar Tests/Pages/recursos HTTPS.

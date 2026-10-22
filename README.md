@@ -2,7 +2,7 @@
 
 Aplicación web educativa en español rioplatense para acompañar la práctica de escucha, pronunciación, escritura y caligrafía, especialmente entre los 4 y 16 años. Sin cuentas, anuncios ni servicios de IA.
 
-**Versión 1.1.1.** [Abrir Habla](https://zivoplataforma-maker.github.io/habla-local/) · [Estado de publicación](https://github.com/zivoplataforma-maker/habla-local/actions). La revisión local está documentada en VALIDACION.md.
+**Versión 1.2.0.** [Abrir Habla](https://zivoplataforma-maker.github.io/habla-local/) · [Estado de publicación](https://github.com/zivoplataforma-maker/habla-local/actions). La revisión local está documentada en VALIDACION.md.
 
 [Guía de uso](docs/GUIA_DE_USO.md) · [Validación](docs/VALIDACION.md) · [Plan maestro](PLANS.md) · [Progreso técnico](PROGRESO_CODEX.md) · [Cambios](CHANGELOG.md)
 
@@ -66,7 +66,7 @@ En la web publicada se solicitan archivos a GitHub Pages. GitHub registra IP por
 
 No contiene todas las palabras del español o del habla argentina. Tampoco reproduce el DLE o las definiciones de la Academia Argentina de Letras. «Uso argentino» no significa exclusivo de Argentina. La segmentación silábica y selección de grupos son editoriales y necesitan revisión profesional; la prueba automática solo confirma que las partes reconstruyen la palabra.
 
-No es un producto clínicamente validado. No diagnostica, califica articulación ni reemplaza terapia. Los objetivos, contrastes y duración deben elegirse con el profesional. Las variantes dialectales argentinas no son errores. El cuaderno no enseña el orden de los trazos ni evalúa motricidad. Para quienes no leen, se necesita acompañamiento.
+No es un producto clínicamente validado. No diagnostica, califica articulación ni reemplaza terapia. Los objetivos, contrastes y duración deben elegirse con el profesional. Las variantes dialectales argentinas no son errores. El cuaderno incluye una guía opcional de construcción de las 27 mayúsculas; es un ejemplo, no un método universal ni una evaluación de motricidad. Para quienes no leen, se necesita acompañamiento.
 
 ## Desarrollo y verificación
 
@@ -90,3 +90,10 @@ Repositorio de `zivoplataforma-maker`. No se añadieron colaboradores ni se camb
 
 ### Diseño 1.1.1
 Identidad de taller gráfico: títulos Bricolage Grotesque (Mathieu Triay, OFL), recortes ilustrados propios, papel cálido y tintas. Todas las opciones y actividades se conservan. Fuente servida localmente, también en la caché offline. Origen y licencia: `dist/assets/fonts/`.
+
+### Mejoras 1.2.0
+- Filtros en «A tu medida», plegados al empezar; íconos SVG propios y primera acción en registro vacío.
+- Público 4–16 explícito y vista previa social con imagen local.
+- Mi recorrido: resumen por fechas, actividades y palabras; imprimir/guardar PDF mediante navegador, sin envío automático.
+- Mi cuaderno: guía opcional de 27 mayúsculas con animación, pausa, pasos manuales e inicial del texto. Respeta Calma visual y movimiento reducido. Minúscula/cursiva continúan como modelos libres.
+- 29 pruebas automatizadas y build estático; sin paquetes nuevos. [Prueba con amigos](docs/PRUEBAS_AMIGOS.md).
