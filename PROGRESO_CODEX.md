@@ -83,3 +83,6 @@ Inspección: árbol limpio, arquitectura y controles conservados. Investigación
 - QA Chrome: seis secciones a 320/390/768/1024 sin overflow; mapa y práctica revisados visualmente a escritorio; cambios de presentación y calma operativos; juego pe/rro completado con Enter y registrado. Ningún error del origen de app observado (sí errores internos de extensión).
 - 24 pruebas y build aprobados. Worker 1.1.1 incluye CSS, ilustración, fuente y licencia para offline. No prueba física Android/iOS.
 - Próxima acción exacta: publicar en main con lease, observar CI/Pages y comprobar los assets públicos; no borrar datos de clientes.
+
+## E7 publicada y comprobada
+Commit funcional 8dfaa57e77d705ea4e0468fe8c65d1d9edff881e en main; lease respetado. Tests: ejecución 39805757366 completed/success. Pages: ejecución 39805757748, build y deploy completed/success. HTML, CSS nuevo, worker, SVG y fuente pública comprobados por HTTPS, idénticos byte a byte a los locales. Rama entrega-1.1.1 sincronizada con main; preview detenido. No hay bloqueos nuevos. Continúan pendientes únicamente las comprobaciones físicas y profesionales ya documentadas.
