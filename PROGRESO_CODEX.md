@@ -95,3 +95,7 @@ Filtros en details/summary cerrado por defecto; teclado Enter abre y selección 
 
 ### E9 implementada y verificada
 Resumen local por fechas con actividades, días y palabras, tabla imprimible y acción Guardar PDF mediante diálogo del navegador. Vista vacía y fechas inválidas claras. Entradas se insertan con textContent. Conteos no interpretan fonemas ni resultados clínicos. 27 tests pasan; QA navegador genera resumen vacío y luego perro/Pronunciación con conteo 1 tras actividad real de prueba. Acción imprimir ejecutada sin error, pero el entorno cloud no muestra el diálogo ni permite verificar PDF físico; se registra ese límite. Estilos print con cabeceras repetidas y filas indivisibles.
+
+### E10 implementada y verificada
+Guía opcional cerrada por defecto con 27 mayúsculas vectoriales propias (incluye Ñ), inicios numerados, instrucciones, animación de 2,2 s por trazo solicitada por usuario, pausa, pasos, reinicio e inicial del texto. Sin librerías, sin guardar observación como práctica. Se mantiene lienzo y sus borradores/modelos.
+29 tests pasan. QA Chrome: Ñ cuatro trazos por Enter, pausa cambia aria-pressed true/false, Calma desactiva animación con aviso; salir a Practicar pausa. No se afirma método escolar universal ni validación clínica. Minúsculas y cursiva guiadas no incluidas; alcance claramente visible.

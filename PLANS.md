@@ -106,7 +106,7 @@ Usuario confirma prueba inicial Android/Chrome, sin revisión exhaustiva. Solici
 - Verificar: tests de fechas/conteos/Unicode/no mutación y QA de vista/estilos de impresión. Recuperar: revertir módulo; historial intacto.
 
 ### E10 — Demostración opcional de trazos (10)
-- [ ] Objetivo: guía de las 27 letras de imprenta mayúscula española con inicios numerados, dirección animada, pausa y pasos manuales.
+- [x] Objetivo: guía de las 27 letras de imprenta mayúscula española con inicios numerados, dirección animada, pausa y pasos manuales.
 - Depende E9. Archivos: tracing.js, index, app, CSS y tests. Conservar modelos libres minúscula/mayúscula/cursiva y lienzo.
 - Alcance educativo: un ejemplo posible de construcción, no método universal ni validación motriz; seguir modelo de docente/profesional. Cursiva y minúscula guiadas fuera de esta entrega, identificadas en UI.
 - Riesgos: modelo confuso, distracción, animación persistente. Aceptación: 27 letras seleccionables, animación solo solicitada, pausa al salir/cambiar, pasos con teclado y motion reducido, sin borrar trazos.
