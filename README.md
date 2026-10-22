@@ -2,7 +2,7 @@
 
 Aplicación web educativa en español rioplatense para acompañar la práctica de escucha, pronunciación, escritura y caligrafía, especialmente entre los 4 y 16 años. Sin cuentas, anuncios ni servicios de IA.
 
-**Versión 1.1.0.** [Abrir Habla](https://zivoplataforma-maker.github.io/habla-local/) · [Estado de publicación](https://github.com/zivoplataforma-maker/habla-local/actions). La revisión local está documentada en VALIDACION.md.
+**Versión 1.1.1.** [Abrir Habla](https://zivoplataforma-maker.github.io/habla-local/) · [Estado de publicación](https://github.com/zivoplataforma-maker/habla-local/actions). La revisión local está documentada en VALIDACION.md.
 
 [Guía de uso](docs/GUIA_DE_USO.md) · [Validación](docs/VALIDACION.md) · [Plan maestro](PLANS.md) · [Progreso técnico](PROGRESO_CODEX.md) · [Cambios](CHANGELOG.md)
 
@@ -87,3 +87,6 @@ Corpus: Santiago Bosio y colaboradores de RLA-ES. Régimen original GPL-3.0+, LG
 No se ha concedido una licencia abierta al código propio; su elección requiere decisión del titular. La visibilidad pública no concede por sí sola licencia general para reutilizarlo. Las licencias del corpus se mantienen separadas.
 
 Repositorio de `zivoplataforma-maker`. No se añadieron colaboradores ni se cambiaron permisos. Para reportar errores, usá [Issues](https://github.com/zivoplataforma-maker/habla-local/issues), incluyendo dispositivo, navegador y pasos. Los reportes son públicos: no adjuntes registros privados, nombres de pacientes ni grabaciones de menores.
+
+### Diseño 1.1.1
+Identidad de taller gráfico: títulos Bricolage Grotesque (Mathieu Triay, OFL), recortes ilustrados propios, papel cálido y tintas. Todas las opciones y actividades se conservan. Fuente servida localmente, también en la caché offline. Origen y licencia: `dist/assets/fonts/`.

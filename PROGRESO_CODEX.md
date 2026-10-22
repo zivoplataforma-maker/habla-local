@@ -73,3 +73,13 @@ Si una pestaña conserva la versión previa, cerrá todas las pestañas de Habla
 ## Verificación terminal de Pages
 
 Consulta posterior: build y deploy de la ejecución 39798990058 quedaron completed/success. La versión funcional 1.1.0 está publicada y su contenido HTTPS ya se verificó. Solo el workflow adicional Tests seguía en cola; no bloqueó el despliegue y repite la suite de 24 pruebas ya aprobada en Pages. No se requiere repetir la publicación de código.
+
+## E7 activa — Refinamiento visual sin ampliar funciones
+Inspección: árbol limpio, arquitectura y controles conservados. Investigación de recursos: Bricolage Grotesque de Mathieu Triay (sitio oficial y Google Fonts, licencia OFL). Dirección: taller gráfico, letras recortadas, papel y tintas; sustituir tarjetas pastel y serif genérica. La fuente se sirve localmente, sin solicitudes a Google desde la app. Luma se conserva como ilustración propia.
+
+## E7 verificada localmente — versión 1.1.1
+- Nueva capa atelier.css, tipografía Bricolage local OFL (WOFF), collage SVG original; se conservan Luma, estilos por edad y calma visual. Sin nuevas dependencias ni llamadas externas.
+- Los 84 IDs y todos los elementos button/input/select son idénticos a la versión anterior. Ningún módulo de actividades ni almacenamiento fue modificado. Se corrigió únicamente la frase obsoleta de restauración en la guía.
+- QA Chrome: seis secciones a 320/390/768/1024 sin overflow; mapa y práctica revisados visualmente a escritorio; cambios de presentación y calma operativos; juego pe/rro completado con Enter y registrado. Ningún error del origen de app observado (sí errores internos de extensión).
+- 24 pruebas y build aprobados. Worker 1.1.1 incluye CSS, ilustración, fuente y licencia para offline. No prueba física Android/iOS.
+- Próxima acción exacta: publicar en main con lease, observar CI/Pages y comprobar los assets públicos; no borrar datos de clientes.

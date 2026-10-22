@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 350" fill="none">
+<!-- Ilustración propia: recortes de un taller de letras. Sin recursos externos. -->
+<path d="M41 74 330 47 351 294 62 318Z" fill="#E5D9B8"/>
+<path d="m57 54 278 18-15 248-278-18Z" fill="#E9EBD5" stroke="#AAB799"/>
+<g stroke="#A6B494" opacity=".45"><path d="M55 101 330 119M53 132l275 18M51 163l275 18M49 194l275 18M47 225l275 18M45 256l275 18"/></g>
+<path d="m57 38 69 5-5 28-68-5Zm225 17 63 14-7 28-63-14Z" fill="#E8C75E" opacity=".9"/>
+<g transform="rotate(-12 87 142)"><path d="M25 91h100v112H25z" fill="#EAA98A" stroke="#9D543C"/><path d="M49 158c0-15 12-23 27-23 8 0 14 3 18 8v-8h14v48H94v-8c-4 6-11 10-20 10-14 0-25-10-25-27Zm15 0c0 9 6 14 14 14 9 0 16-6 16-15s-6-13-15-13-15 5-15 14Z" fill="#783B2B"/></g>
+<g transform="rotate(12 292 160)"><path d="M261 107h92v103h-92z" fill="#B7D0DA" stroke="#52747F"/><path d="M284 134h14v9c5-7 12-11 23-10v15c-14-2-23 4-23 17v25h-14Z" fill="#315665"/></g>
+<path d="m276 254 53 44-8 10-53-44 8-10Z" fill="#D38D39" stroke="#73522B"/><path d="m268 264-8-15 16 5-8 10Z" fill="#F5E0B7" stroke="#73522B"/><path d="m260 249 5 3-2 3-3-6Z" fill="#25382F"/>
+<path d="m85 267 5 14 15 1-12 9 4 14-12-8-12 8 4-14-12-9 15-1 5-14Z" fill="#B54C31"/>
+<path d="m300 28 4 10 11 2-9 6 2 11-8-7-10 5 4-10-7-8 10 1 3-10Z" fill="#547346"/>
+<path d="M160 65c13-13 29-12 40 0m-32-9 3 8m18-9-3 9" stroke="#46663C" stroke-width="3" stroke-linecap="round"/>
+</svg>

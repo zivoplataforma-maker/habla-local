@@ -79,3 +79,12 @@ Evolucionar la versión aprobada hacia un espacio visual y lúdico para 4–16 a
 E1–E6 ejecutadas. GitHub actualizado por etapas. La distribución estática se verificó por HTTPS y coincide byte por byte con HTML, worker e icono locales. Las 24 pruebas y el build pasaron dentro del trabajo build de Pages. Al registrar el cierre, el paso Publicar y Complete job informaban success; GitHub aún mostraba la ejecución global en progreso y el workflow separado Tests en cola. Es seguimiento externo de CI, no un fallo de código identificado. Evidencia y enlaces en PROGRESO_CODEX.md.
 
 Siguiente tarea: comprobar la versión en Android/iOS físicos y revisar objetivos/material con profesional; no ampliar cobertura ni prometer validación sin esa evidencia.
+
+### E7 — Taller gráfico: refinamiento visual (pedido del usuario)
+- [x] Objetivo: identidad editorial y lúdica propia, conservando todas las opciones y funciones.
+- Motivo: usuario aprueba la amplitud funcional, rechaza apariencia genérica. Prioridad: diseño. Dependencias: E1–E6.
+- Alcance: tipografía local con licencia, paleta de tintas, composición, fichas e ilustración decorativa. Archivos: CSS, index, assets, worker, documentos.
+- Conservar: IDs, controles, lógica de actividades, datos guardados, voces, importación/exportación y modos por edad. No añadir actividades.
+- Riesgos: desbordamiento, distracción, contraste, caché incompleta. Aceptación: todas las funciones conservadas, lectura clara, móviles sin overflow, fuente disponible offline.
+- Verificar: suite completa/build, navegador escritorio y 320/390/768/1024, navegación y controles. Recuperar: revertir commit visual sin tocar almacenamiento.
+- Publicar al finalizar por autorización vigente; verificar Pages.
