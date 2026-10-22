@@ -30,7 +30,7 @@ Evolucionar la versión aprobada hacia un espacio visual y lúdico para 4–16 a
 - Recuperación: descartar cambios de la etapa en esta rama; ningún cambio de datos reales.
 
 ### E2 — Experiencia visual y juego educativo (P2)
-- [ ] Objetivo: misiones cortas opcionales, tres presentaciones (4–7, 8–11, 12–16) y juego de sílabas con teclado/tacto/mouse.
+- [x] Objetivo: misiones cortas opcionales, tres presentaciones (4–7, 8–11, 12–16) y juego de sílabas con teclado/tacto/mouse.
 - Dependencias: E1. Archivos: index.html, style.css, app.js, play.js, assets propios.
 - Alcance: conservar identidad verde/papel, isla de actividades, acompañante visual, progreso de participación sin presión, vocabulario revisable.
 - Conservar: actividades originales y acceso a banco/cuaderno/guía. No pedir edad exacta ni perfil personal. Riesgo: infantilización de adolescentes, contraste, excesos de animación.

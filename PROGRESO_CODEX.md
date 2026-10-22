@@ -18,3 +18,12 @@
 - Un JSON corrupto queda protegido contra sobrescritura silenciosa y puede descargarse intacto. Detección de cambios en otra pestaña para evitar sobreescrituras.
 - Evidencia: 12/12 pruebas aprobadas (7 existentes + 5 de almacenamiento). No se tocaron datos reales del usuario.
 - Etapa activa: E2. Próxima acción: presentación por franjas, misiones y juego silábico accesible.
+
+## E2 completada — Mapa visual y juego
+
+- Cinco estaciones opcionales, misión de 3/5 estaciones diferentes, reinicio sin borrar historial. Sin temporizador, rankings, premios aleatorios ni puntuación de articulación.
+- Luma y formas en SVG/CSS propios; se conserva paleta y navegación previa. Presentaciones Descubrir/Explorar/Enfocar sin recolectar edad exacta. Calma visual y prefers-reduced-motion.
+- Juego de piezas silábicas seleccionables por botón, sin depender de arrastrar; solo sílabas editoriales de la selección. Banco inicia en selección educativa, corpus completo sigue accesible.
+- Evidencia: 15/15 pruebas. En navegador local real: carga sin error de app visible, render de escritorio, palabra perro armada con botones, escritura comparada, pronunciación registrada manualmente, celebración tras 3 estaciones, modo 12–16 y reinicio. La UI de 1348 px se inspeccionó visualmente.
+- El navegador ahora abre la vista local; el bloqueo anterior no afectó esta copia y configuración. No implica validación clínica ni prueba en móvil físico.
+- Etapa activa E3. Próxima acción: audio cancelable y borradores temporales del cuaderno, servidor portable.
