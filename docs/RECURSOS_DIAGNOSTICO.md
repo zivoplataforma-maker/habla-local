@@ -21,3 +21,5 @@ Defectos concretos: restauración ausente, lectura inválida silenciosa, actuali
 ## Límites del diagnóstico
 
 Revisión de código y tests, no pentest externo ni certificación. No se inspeccionaron cuentas o servicios ajenos, ni se revelaron variables secretas. El servidor se probó localmente; la seguridad del hosting GitHub pertenece a su proveedor.
+
+Actualización de autorización: después de terminar la revisión local, el titular indicó «al finalizar actualiza github». Se habilitó esa publicación concreta; el cierre está en PROGRESO_CODEX.md.

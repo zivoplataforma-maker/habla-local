@@ -69,7 +69,13 @@ Evolucionar la versión aprobada hacia un espacio visual y lúdico para 4–16 a
 - Publicación/push/deploy autorizados posteriormente; ver E6.
 
 ### E6 — Actualizar GitHub y verificar publicación (autorizada)
-- [ ] Objetivo: subir revisión probada a main y verificar Tests/Pages sin forzar ni sobrescribir cambios ajenos.
+- [x] Objetivo: subir revisión probada a main y verificar Tests/Pages sin forzar ni sobrescribir cambios ajenos.
 - Dependencias: E1–E5. Alcance: archivos modificados, documentos y assets propios. No permisos, facturación ni dominio.
 - Riesgo: CI o caché de clientes. Criterio: lease de main respetado, CI exitoso, HTML/worker nuevos accesibles por HTTPS.
 - Recuperación: commit de reversión sobre la revisión anterior si aparece un fallo de despliegue.
+
+## Cierre de la revisión
+
+E1–E6 ejecutadas. GitHub actualizado por etapas. La distribución estática se verificó por HTTPS y coincide byte por byte con HTML, worker e icono locales. Las 24 pruebas y el build pasaron dentro del trabajo build de Pages. Al registrar el cierre, el paso Publicar y Complete job informaban success; GitHub aún mostraba la ejecución global en progreso y el workflow separado Tests en cola. Es seguimiento externo de CI, no un fallo de código identificado. Evidencia y enlaces en PROGRESO_CODEX.md.
+
+Siguiente tarea: comprobar la versión en Android/iOS físicos y revisar objetivos/material con profesional; no ampliar cobertura ni prometer validación sin esa evidencia.

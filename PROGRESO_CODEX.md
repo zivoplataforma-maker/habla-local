@@ -53,3 +53,19 @@
 - README, guía, diseño, pendientes y validación actualizados. Auditoría de recursos en docs/RECURSOS_DIAGNOSTICO.md. No se afirma cobertura total, validación clínica ni conformidad WCAG.
 - Pruebas de micrófono/PWA/offline físico y revisión profesional pendientes externos.
 - Autorización adicional recibida: «al finalizar actualiza github». Próxima acción: verificar HEAD remoto, subir cambios conservando historia y observar CI/Pages.
+
+## E6 ejecutada — GitHub actualizado y web verificada
+
+- Autorización del titular: «al finalizar actualiza github». Se preservó main previo `33ecf5c` y se publicaron seis commits de etapas sin force ni cambios de permisos.
+- Revisión funcional remota: `2bf40b024ea55b44b0f5a6ec1d3ef371ba8168c4`. Los árboles remotos se compararon con los árboles locales de cada etapa: idénticos, incluidos los PNG.
+- Pages: https://github.com/zivoplataforma-maker/habla-local/actions/runs/39798990058. Trabajo build completado exitosamente con 24 pruebas y validación estática. Pasos Publicar y Complete job: success. En la consulta de cierre el trabajo/global todavía figuraba in_progress.
+- Workflow redundante Tests: https://github.com/zivoplataforma-maker/habla-local/actions/runs/39798990069, en cola al registrar esta evidencia. La misma suite ya pasó dentro del build de Pages y localmente. No se deshabilitaron pruebas.
+- Verificación HTTPS de index.html, sw.js y assets/icon-192.png: HTTP 200 y coincidencia byte por byte con los archivos locales. Aplicación 1.1.0 disponible en https://zivoplataforma-maker.github.io/habla-local/.
+- La espera del despliegue se investigó: environment github-pages solo tiene política de rama, sin revisores ni temporizador configurado. No se cambiaron protecciones ni permisos.
+- No se requiere intervención para código/publicación. Se conserva una rama local con todos los pasos y se sincroniza una rama de entrega con main remoto. Preview detenido.
+
+## Continuidad y límites
+
+Revisión funcional terminada. Seguimiento externo: estado terminal de los workflows enlazados, instalación/offline/voz/micro en hardware Android/iOS, revisión profesional de material y definición de inventario léxico. No hay hallazgo de regresión introducida en los flujos probados. Las pruebas responsive no equivalen a hardware físico ni a certificación WCAG.
+
+Si una pestaña conserva la versión previa, cerrá todas las pestañas de Habla y abrila con conexión. No borres los datos del sitio. En versiones nuevas se ofrece aplicar actualización desde Guía y ajustes.
