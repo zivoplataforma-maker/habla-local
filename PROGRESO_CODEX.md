@@ -69,3 +69,7 @@
 Revisión funcional terminada. Seguimiento externo: estado terminal de los workflows enlazados, instalación/offline/voz/micro en hardware Android/iOS, revisión profesional de material y definición de inventario léxico. No hay hallazgo de regresión introducida en los flujos probados. Las pruebas responsive no equivalen a hardware físico ni a certificación WCAG.
 
 Si una pestaña conserva la versión previa, cerrá todas las pestañas de Habla y abrila con conexión. No borres los datos del sitio. En versiones nuevas se ofrece aplicar actualización desde Guía y ajustes.
+
+## Verificación terminal de Pages
+
+Consulta posterior: build y deploy de la ejecución 39798990058 quedaron completed/success. La versión funcional 1.1.0 está publicada y su contenido HTTPS ya se verificó. Solo el workflow adicional Tests seguía en cola; no bloqueó el despliegue y repite la suite de 24 pruebas ya aprobada en Pages. No se requiere repetir la publicación de código.
