@@ -1,0 +1,16 @@
+{
+  "count": 56725,
+  "sources": [
+    {
+      "file": "index.dic",
+      "sha256": "907f786a8ceb3456722b20ad91dd4dbe99c5c16e45015ea63155e36f26b06d2c",
+      "declaredEntries": "57344"
+    },
+    {
+      "file": "argentina.dic",
+      "sha256": "4fe3e193425bb3841ee218d36a9fc95d85b8daa8909363bdbba55a2f9f4e3d1d",
+      "declaredEntries": "57437"
+    }
+  ],
+  "description": "RLA-ES: unión de las entradas base es_ES (2.8, distribución wooorm) y es_AR (distribución LibreOffice). No se expanden reglas de afijos. Datos derivados bajo MPL-2.0, opción permitida por la licencia de origen."
+}
