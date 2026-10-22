@@ -1,46 +1,71 @@
-# Guía de uso
+# Guía de uso · versión 1.1.0
 
-## Abrir la aplicación
+Guía de la revisión 1.1.0. El estado de publicación está en GitHub Actions del repositorio.
 
-Entrá a https://zivoplataforma-maker.github.io/habla-local/ desde el navegador del celular, la tablet o la computadora. No necesitás una cuenta ni descargar un ZIP. La primera carga requiere conexión.
+## Abrir
 
-El diseño se adapta al ancho de pantalla. En pantallas pequeñas, desplazá horizontalmente la barra de navegación si no ves todas sus opciones. La instalación como PWA y la compatibilidad completa en Android e iOS siguen pendientes de validación.
+En una computadora, abrí `dist/index.html` para practicar directamente, o iniciá `node server.cjs` y entrá a http://localhost:4173 para usar las funciones PWA compatibles. No hace falta instalar paquetes npm. En Windows también está `INICIAR-WINDOWS.bat`.
 
-## Practicar
+La web publicada es https://zivoplataforma-maker.github.io/habla-local/. No requiere una computadora encendida.
 
-1. Elegí un grupo de práctica y la extensión de la palabra. Los grupos se basan en una selección editorial; no identifican automáticamente todos los sonidos de cada palabra del banco.
-2. Tocá **Escuchar palabra**. Si no suena, entrá a **Guía y ajustes** y revisá la voz disponible.
-3. En **Pronunciar**, probá decirla a tu ritmo. **Grabar mi voz** solicita permiso del micrófono y permite escucharte; no analiza ni califica la articulación.
-4. En **Escribir**, copiá el modelo o escuchá el dictado. Podés ocultar el modelo. **Comparar escritura** comprueba letras, tildes y diéresis; no distingue mayúsculas de minúsculas ni evalúa la letra manuscrita.
-5. En **Escuchar pares**, escuchá primero y elegí la palabra que sonó. Los pares siguen su propia secuencia: no cambian con el filtro del grupo de práctica.
+## Mi aventura
 
-La actividad de pronunciación se registra al tocar **Ya practiqué**; escritura y pares se registran al acertar la comparación. Ese registro representa acciones realizadas en la app, no progreso clínico. Los contadores se basan en las últimas 1.000 actividades conservadas.
+Elegí una presentación: **Descubrir · 4–7 con compañía**, **Explorar · 8–11** o **Enfocar · 12–16**. Son estilos de interfaz orientativos, no niveles de desarrollo ni una evaluación. No se guarda la edad ni se pide un nombre. Para quien aún no lee, se necesita una persona que acompañe las consignas.
 
-## Banco de palabras
+El mapa ofrece cinco estaciones:
 
-Buscá una palabra y tocala para practicar. La búsqueda permite omitir tildes, pero distingue `ñ` de `n`. El banco general no está filtrado por edad. Con niños, seleccioná previamente el material junto a un adulto o profesional.
+- **La cueva del eco:** escuchar, decir y, si se desea, grabarse.
+- **El taller de letras:** copiar o escuchar un dictado y comparar la escritura.
+- **El puente de sílabas:** elegir piezas para construir una palabra.
+- **El bosque de sonidos:** escuchar una de dos palabras y reconocerla.
+- **El jardín de trazos:** dibujar sobre un modelo o practicar con teclado.
 
-La estrella guarda o quita una favorita. Podés agregar palabras propias o importar un TXT con una entrada por línea, hasta 2 MB. Se admiten letras españolas, espacios y guiones; máximo 50 caracteres por entrada y 50.000 entradas propias. Las palabras propias se normalizan a minúscula.
+Podés elegir un recorrido de 3 o 5 estaciones diferentes, en cualquier orden. El avance registra participación y comparaciones educativas, no precisión clínica. Se puede parar en cualquier momento. **Nuevo recorrido** reinicia el mapa, sin borrar el historial. El recorrido y la presentación se reinician al recargar. **Calma visual** reduce decoraciones y animaciones; también se respeta la preferencia del sistema de reducir movimiento.
 
-Las explicaciones y sílabas pertenecen a la selección educativa. Las demás entradas del banco no incluyen definición ni segmentación silábica.
+## Palabras y actividades
+
+El banco empieza en la selección educativa. Para explorar todas las grafías, cambiá Origen a **Banco completo · revisar con un adulto**. No es un corpus filtrado por edad. La búsqueda tolera omitir tildes, pero distingue ñ de n. La estrella guarda una favorita.
+
+Hay 56.725 grafías base y 94 palabras en la selección. Al combinar ambas fuentes, el banco inicial muestra 56.737 grafías únicas; las palabras propias pueden aumentar ese total. No son todas las palabras del español o del habla argentina. Solo la selección incluye explicaciones breves y segmentación silábica editorial.
+
+Los grupos R fuerte, R suave, L, S y grupos consonánticos son listas editoriales, no un analizador de fonemas. La selección argentina no significa que todas sus palabras sean exclusivas de Argentina. Los pares de escucha tienen su propia secuencia, independiente del filtro de grupo.
+
+La pronunciación se registra al tocar **Ya practiqué**; escritura y sílabas al coincidir con el modelo; pares al elegir la palabra después de terminar la reproducción. Se conserva el último millar de actividades y se muestran las 30 más recientes. No hay puntajes terapéuticos.
+
+## Sílabas y teclado
+
+Escuchá la palabra o mostrá el modelo; elegí las piezas en orden. Se puede usar dedo, mouse o Tab y Enter. Quitar la última permite cambiar el orden. Solo se ofrecen sílabas de la selección editorial: no se inventa una segmentación para palabras importadas. La segmentación necesita revisión lingüística profesional; la prueba automática solo verifica que las partes reconstruyan la palabra.
 
 ## Cuaderno
 
-Escribí un modelo de hasta 24 caracteres. Elegí imprenta minúscula, mayúscula o la cursiva disponible en el dispositivo. Trazá con dedo, lápiz táctil o mouse; usá Deshacer para quitar el último trazo. El campo de teclado ofrece práctica de escritura alternativa.
+Ingresá un modelo de hasta 24 caracteres. Elegí imprenta minúscula, mayúscula o la cursiva disponible en el dispositivo. Trazá con dedo, lápiz táctil o mouse; Deshacer quita el último trazo. El campo de teclado ofrece práctica escrita alternativa.
 
-Descargá el PNG para conservar el dibujo o imprimí una ficha. **Registrar práctica de caligrafía** es una marca manual: no evalúa el dibujo. Al cambiar el modelo o seleccionar otra palabra se borran los trazos; tampoco se conservan al cerrar la app.
+Se conservan borradores por texto y estilo durante la sesión (hasta 100 modelos). Volver al mismo texto/estilo recupera sus trazos. Los borradores se pierden al recargar o cerrar. Descargá el PNG para conservarlo o imprimí una ficha. El botón de registrar caligrafía es manual y no evalúa la calidad del trazo.
 
-## Audio y conexión
+## Voz y micrófono
 
-- **No aparece una voz:** el navegador no expone una voz española compatible. Revisá las voces instaladas del sistema o usá el modelo de un acompañante. No se garantiza una voz argentina en todos los equipos.
-- **Solo voces locales:** viene activado. Si lo desactivás, una voz remota puede transmitir el texto a su proveedor y necesitar Internet.
-- **No funciona Grabar:** comprobá el permiso del micrófono y usá el enlace HTTPS. La grabación depende del soporte del navegador; se puede practicar sin ella.
-- **Sin conexión:** la app intenta guardar sus archivos mediante una caché. La primera apertura y las actualizaciones necesitan conexión; verificá su disponibilidad en tu equipo. El navegador puede eliminar los archivos guardados.
+La voz depende del navegador y de lo instalado en el sistema. Se prefiere una voz es-AR si existe; no se garantiza acento argentino. El filtro de voces locales está activado por defecto. Desactivarlo puede usar un proveedor remoto y transmitirle el texto reproducido.
 
-## Guardado y privacidad
+La grabación solicita permiso solo al pulsar Grabar, dura como máximo 30 segundos y se puede detener antes. La aplicación no sube audio ni califica articulación. Al cambiar de palabra, actividad o sección, se cancela la grabación y se descarta el audio temporal. Descargalo antes si querés conservarlo. Se puede practicar sin micrófono. Para grabar se necesita HTTPS o localhost y soporte del navegador.
 
-Favoritas, palabras propias y registro permanecen en el navegador y dirección web usados. No se sincronizan con otra computadora, otro navegador ni una dirección nueva. No hay perfiles separados para pacientes.
+## Copias del registro
 
-**Exportar registro JSON** descarga las actividades, favoritas y palabras propias. No incluye audios ni dibujos y no hay restauración JSON implementada. **Borrar registro** elimina únicamente las actividades. Borrar todos los datos del sitio desde el navegador también puede eliminar favoritas y palabras propias.
+**Exportar registro JSON** descarga actividades, favoritas y palabras propias; no incluye dibujos ni audios. **Restaurar copia JSON** permite seleccionar hasta 8 MB, valida todo el archivo y muestra un resumen antes de confirmar. Combina con el registro actual sin duplicar actividades iguales. Si se supera el límite de 1.000 actividades, el resumen informa cuántas antiguas quedarían fuera.
 
-La versión publicada descarga archivos de GitHub Pages. La aplicación no sube el contenido de tus prácticas; GitHub conserva registros de acceso por seguridad. Si compartís una exportación o grabación, revisá antes lo que contiene.
+Al confirmar se intenta descargar el registro previo: conservá esa copia. Una copia inválida o un error de escritura no aplica la restauración. Si otra pestaña cambió los datos, exportá esta sesión y recargá antes de importar de nuevo.
+
+Si el registro guardado es ilegible, la app lo protege contra sobrescritura. En Mi recorrido se puede descargar el original y restaurar una copia válida. Si el navegador bloquea el almacenamiento, la práctica continúa en memoria: exportá antes de cerrar. No hay sincronización automática entre equipos ni perfiles separados para pacientes.
+
+## Instalar, actualizar y usar sin conexión
+
+Desde HTTPS o localhost, la app intenta preparar sus archivos sin conexión. En Guía y ajustes, **Comprobar copia y actualizaciones** indica si la caché está completa. El navegador puede liberar esa copia; comprobá su disponibilidad en el dispositivo antes de depender de ella. Las voces offline necesitan voces locales.
+
+El botón **Instalar Habla** aparece solo si el navegador ofrece instalación. También podés usar el menú de Chrome/Edge en Android; en Safari de iPhone/iPad, Compartir → Agregar a inicio. La instalación y el audio aún requieren pruebas en dispositivos físicos.
+
+Cuando hay una versión nueva, se ofrece **Aplicar actualización y recargar**. No recarga durante la práctica sin elección. Descargá antes audio y dibujos; el registro ya guardado se conserva. No borres los datos del sitio para actualizar: podrías perder las palabras y el historial.
+
+## Privacidad y apoyo profesional
+
+No hay cuentas, anuncios ni analítica propia. Las prácticas quedan en el navegador. Al visitar la web pública, GitHub recibe solicitudes de archivos y registra IP por seguridad. En copias locales no se necesita contactar a GitHub para practicar. Los enlaces externos y voces remotas tienen sus propios proveedores.
+
+La herramienta no reemplaza evaluación o tratamiento fonoaudiológico. Elegí objetivos y material con tu profesional. Las variantes del habla argentina no son errores. No se han validado clínicamente los ejercicios ni la caligrafía.

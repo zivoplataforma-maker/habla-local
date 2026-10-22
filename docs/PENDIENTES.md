@@ -1,35 +1,26 @@
-# Estado y mejoras pendientes
+# Pendientes reales · 22/10/2026
 
-Actualizado el 22 de octubre de 2026. Esta lista separa lo implementado de lo que todavía requiere trabajo.
+## Revisión local 1.1.0 implementada
 
-## Implementado
+Mapa de cinco estaciones, presentación orientativa para 4–7/8–11/12–16, juego silábico, calma visual, restauración validada de JSON, protección del registro ilegible, cancelación de audio, borradores temporales del cuaderno, manifest e iconos PWA, estado de caché y actualización elegida por la persona. Evidencia en VALIDACION.md y PROGRESO_CODEX.md.
 
-- Web pública por HTTPS y ejecución local opcional.
-- Banco de 56.725 entradas base; selección educativa y vocabulario de uso argentino.
-- Voz del navegador, grabación temporal, copia/dictado, pares de palabras y cuaderno.
-- Registro local, favoritas, importación TXT y exportación JSON.
-- Pruebas automatizadas y publicación mediante GitHub Actions.
+## Requieren entorno externo o decisión humana
 
-## Prioridad siguiente
+1. Publicación autorizada por el titular el 22/10/2026 al indicar «al finalizar actualiza github». El resultado y evidencia se registran en PROGRESO_CODEX.md.
+2. Probar instalación, uso offline, voces, micrófono y descargas en Android/iOS físicos. La vista responsive en Chrome de escritorio no sustituye esas pruebas.
+3. Revisar lingüísticamente la separación silábica y el material por edad con un profesional. No hay validación clínica ni pruebas con pacientes.
+4. Elegir licencia del código propio; conservar las condiciones del corpus. No se tomó una decisión legal en nombre del titular.
+5. Definir si se desea dominio propio. El almacenamiento del navegador no migra por cambiar el dominio; se puede trasladar mediante una copia JSON.
 
-1. Probar los flujos en Android Chrome, iOS Safari y escritorio: audio, permisos, teclado, trazado, impresión y descargas.
-2. Completar y validar instalación PWA, iconos específicos para plataformas, aviso de actualización y modo sin conexión.
-3. Revisar lingüísticamente la separación silábica, los grupos de sonidos, los ejemplos y la adecuación por edad con una persona especializada.
-4. Auditar accesibilidad con lectores de pantalla, zoom, contraste y navegación con teclado. El diseño adaptable no acredita una norma de accesibilidad.
-5. Añadir restauración del registro exportado, si se necesita migración entre equipos. Hoy solo existe exportación.
-6. Ampliar el léxico y sus metadatos mediante fuentes reutilizables; distinguir lemas, flexiones, regionalismos y definiciones. No anunciar cobertura total sin un inventario verificable.
+## Ampliación del vocabulario
 
-## Decisiones del titular
+La cobertura total no está cumplida. Se mantiene la cifra verificable de 56.725 grafías base. El corpus incluye lemas, nombres y otras entradas; no expande todos los afijos ni aporta todas las definiciones. No es correcto anunciar «todo el diccionario» o «todo el lenguaje argentino».
 
-- Elegir una licencia para el código propio. Las licencias del corpus ya están documentadas y no se deben reemplazar por una licencia general incompatible.
-- Elegir si se usará un dominio propio. Cambiar de dominio cambia el almacenamiento del navegador; el registro no migra automáticamente.
+Para ampliar, primero se debe acordar el inventario (lemas, flexiones, expresiones, regionalismos y definiciones), elegir fuentes con permisos explícitos y conservar atribución, versiones y pruebas. Una expansión automática de afijos no equivale a un diccionario revisado ni garantiza adecuación infantil.
 
-## Presentación en GitHub
+## Mejoras futuras que requieren validación
 
-La descripción actual es coherente con la versión local, pero puede describir mejor la disponibilidad web y el carácter educativo. Texto sugerido para About, inferior a 350 caracteres:
-
-> Aplicación web educativa de apoyo a la práctica fonoaudiológica: 56.725 entradas ortográficas y selección argentina, escucha, grabación de voz, dictado, escritura y trazado. Uso web o local, con registro en el navegador. No diagnostica ni reemplaza la atención profesional.
-
-Website sugerido para About: https://zivoplataforma-maker.github.io/habla-local/
-
-La revisión de archivos no cambia automáticamente esos campos de configuración del repositorio.
+- Formación de letras con orden de trazos revisado por docente/especialista.
+- Ilustraciones y audio humano por palabra; los emojis actuales son ilustrativos.
+- Auditoría completa de accesibilidad con tecnologías asistivas. La implementación incluye controles nativos, foco visible y reducción de movimiento, pero no acredita conformidad WCAG.
+- Persistencia de dibujos/audio: hoy solo descarga voluntaria; cualquier cambio debe considerar privacidad y almacenamiento de menores.

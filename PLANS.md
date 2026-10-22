@@ -4,7 +4,7 @@ Fecha: 22/10/2026. Base: `33ecf5c`. Rama local: `mejora-infantil-local`.
 
 ## Alcance y reglas
 
-Evolucionar la versión aprobada hacia un espacio visual y lúdico para 4–16 años. Una etapa principal a la vez, con cambios y pruebas independientes. Conservar vocabulario, licencias, funcionamiento local y prácticas existentes. Sin cuentas, APIs pagas ni datos personales. No hacer push, publicar ni desplegar sin nueva autorización. No sobrescribir la copia anterior con cambios preexistentes.
+Evolucionar la versión aprobada hacia un espacio visual y lúdico para 4–16 años. Una etapa principal a la vez, con cambios y pruebas independientes. Conservar vocabulario, licencias, funcionamiento local y prácticas existentes. Sin cuentas, APIs pagas ni datos personales. Nueva autorización recibida el 22/10/2026: «al finalizar actualiza github». Se permite actualizar el repositorio y verificar su flujo de publicación existente. No sobrescribir la copia anterior con cambios preexistentes.
 
 ## Diagnóstico confirmado
 
@@ -55,7 +55,7 @@ Evolucionar la versión aprobada hacia un espacio visual y lúdico para 4–16 a
 - Recuperación: mantener worker previo hasta instalación íntegra; nunca borrar localStorage para actualizar.
 
 ### E5 — Verificación final y continuidad (P3)
-- [ ] Objetivo: documentación, inventario, análisis de seguridad/rendimiento, build estático validado y entrega local recuperable.
+- [x] Objetivo: documentación, inventario, análisis de seguridad/rendimiento, build estático validado y entrega local recuperable.
 - Dependencias: E1–E4. Archivos: docs, README, PLANS, PROGRESO, scripts de comprobación.
 - Conservar: sin analítica de niños ni promesas de cobertura total. Riesgo: exagerar evidencia.
 - Aceptación: todas las pruebas y comprobaciones relevantes pasan; nueva UI revisada en navegador o bloqueo explícito; docs coinciden; cambios en commits locales; producción intacta.
@@ -66,4 +66,10 @@ Evolucionar la versión aprobada hacia un espacio visual y lúdico para 4–16 a
 
 - Revisión clínica/lingüística profesional y dispositivos físicos Android/iOS: no disponibles en este entorno.
 - Cobertura total del español/argentino: requiere definición de inventario y fuentes reutilizables; no prometer totalidad ni inventar cifras.
-- Publicación/push/deploy: requieren autorización separada del titular al final.
+- Publicación/push/deploy autorizados posteriormente; ver E6.
+
+### E6 — Actualizar GitHub y verificar publicación (autorizada)
+- [ ] Objetivo: subir revisión probada a main y verificar Tests/Pages sin forzar ni sobrescribir cambios ajenos.
+- Dependencias: E1–E5. Alcance: archivos modificados, documentos y assets propios. No permisos, facturación ni dominio.
+- Riesgo: CI o caché de clientes. Criterio: lease de main respetado, CI exitoso, HTML/worker nuevos accesibles por HTTPS.
+- Recuperación: commit de reversión sobre la revisión anterior si aparece un fallo de despliegue.

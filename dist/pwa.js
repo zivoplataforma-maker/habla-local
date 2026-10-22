@@ -12,7 +12,7 @@
     status.textContent=result?.ready?`Archivos preparados para uso sin conexión · versión ${result.version}. La voz requiere una voz local instalada. El navegador puede liberar esta copia.`:'Todavía no se pudo verificar una copia completa sin conexión. Abrí con Internet y volvé a comprobar.';
   }
   if(!('serviceWorker'in navigator)||location.protocol==='file:'){
-    status.textContent='Modo archivo: conservá la carpeta completa. Para instalar y preparar copia sin conexión, usá HTTPS o localhost.';check.disabled=true;return;
+    status.textContent='Este navegador o modo de apertura no permite instalar la copia sin conexión. Usá un navegador compatible en HTTPS o localhost; si abriste archivos, conservá la carpeta completa.';check.disabled=true;return;
   }
   navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(async reg=>{
     registration=reg;showWaiting();reg.addEventListener('updatefound',()=>{const installing=reg.installing;installing?.addEventListener('statechange',()=>{if(installing.state==='installed'){showWaiting();offlineState();}});});

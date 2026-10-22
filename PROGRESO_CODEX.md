@@ -44,3 +44,12 @@
 - No usa skipWaiting automático: la UI avisa y ofrece aplicar/recargar, con advertencia sobre audio y borradores. Registro local intacto.
 - Evidencia: 24/24 tests; worker probado en entorno Node simulado: instalación, STATUS, actualización explícita, navegación offline y aislamiento. Iconos verificados por dimensiones PNG. No equivale a prueba física de instalación/offline.
 - Navegador local confirma integración de scripts y render a 1363 px sin desbordamiento horizontal. Etapa activa E5: verificación de flujos, tamaños y documentación.
+
+## E5 completada — Verificación integral local
+
+- 24/24 pruebas aprobadas. Build estático: scripts válidos, 84 IDs únicos, referencias completas, iconos/versiones correctos. dist pesa 2,42 MiB incluyendo fuentes de corpus. Sin paquetes instalados.
+- QA Chrome: mapa/estaciones, juego con teclado, escritura, celebración, presentación 12–16 y reinicio. Layout con viewports fijos 320/390/768/1024 y escritorio 1363; se corrigió min-content de grid que causaba overflow en 320. Modos sílabas/escritura/pares/pronunciación y recorrido sin overflow de página en 320.
+- Cuaderno: mouse dibuja; cambiar modelo y regresar recupera trazo; alternativa teclado compara correctamente. Búsqueda lapiz encuentra lápiz. Control de restauración visible; lógica cubierta en tests, selector de archivo real pendiente.
+- README, guía, diseño, pendientes y validación actualizados. Auditoría de recursos en docs/RECURSOS_DIAGNOSTICO.md. No se afirma cobertura total, validación clínica ni conformidad WCAG.
+- Pruebas de micrófono/PWA/offline físico y revisión profesional pendientes externos.
+- Autorización adicional recibida: «al finalizar actualiza github». Próxima acción: verificar HEAD remoto, subir cambios conservando historia y observar CI/Pages.

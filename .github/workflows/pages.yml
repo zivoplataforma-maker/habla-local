@@ -18,6 +18,8 @@ jobs:
           node-version: '22'
       - name: Verificar aplicación
         run: npm test
+      - name: Validar distribución estática
+        run: npm run build
       - name: Preparar Pages
         uses: actions/configure-pages@v5
       - name: Empaquetar web

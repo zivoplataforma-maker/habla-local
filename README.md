@@ -1,98 +1,89 @@
-# Habla · Palabra a palabra
+# Habla · Exploradores de palabras
 
-Aplicación web en español rioplatense para acompañar la práctica de pronunciación, escritura y caligrafía. Se puede usar desde el navegador o ejecutar en una computadora. Sin cuentas de usuario, anuncios ni servicios de IA.
+Aplicación web educativa en español rioplatense para acompañar la práctica de escucha, pronunciación, escritura y caligrafía, especialmente entre los 4 y 16 años. Sin cuentas, anuncios ni servicios de IA.
 
-**[Abrir Habla Local](https://zivoplataforma-maker.github.io/habla-local/)** · [Guía de uso](docs/GUIA_DE_USO.md) · [Estado de validación](docs/VALIDACION.md)
+**Versión 1.1.0.** [Abrir Habla](https://zivoplataforma-maker.github.io/habla-local/) · [Estado de publicación](https://github.com/zivoplataforma-maker/habla-local/actions). La revisión local está documentada en VALIDACION.md.
 
-Es una herramienta educativa de apoyo, no un tratamiento validado ni un sistema de diagnóstico.
+[Guía de uso](docs/GUIA_DE_USO.md) · [Validación](docs/VALIDACION.md) · [Plan maestro](PLANS.md) · [Progreso técnico](PROGRESO_CODEX.md) · [Cambios](CHANGELOG.md)
 
-## Usar desde el celular o la computadora
+## Experiencia
 
-Abrí **https://zivoplataforma-maker.github.io/habla-local/** en tu navegador. No necesitás descargar el repositorio ni mantener encendida una computadora. La primera carga requiere Internet. Las prácticas se guardan en ese navegador, sin sincronización entre dispositivos.
+- Mapa con cinco estaciones: eco, escritura, sílabas, escucha de pares y trazos.
+- Acompañante visual Luma y presentaciones orientativas Descubrir (4–7, con compañía), Explorar (8–11) y Enfocar (12–16). No se recoge edad exacta ni identidad.
+- Recorridos opcionales de 3 o 5 estaciones diferentes, sin límite de tiempo ni rankings. El avance refleja participación, no habilidad clínica. Se puede pausar o seguir practicando libremente.
+- Juego de sílabas con piezas seleccionables mediante dedo, mouse, Tab y Enter; modelo opcional y posibilidad de quitar la última pieza.
+- Calma visual y respeto de reducción de movimiento del sistema.
 
-La web ya está publicada por HTTPS. La compatibilidad funcional completa, la instalación como PWA y el uso sin conexión en Android e iOS todavía requieren pruebas en dispositivos reales. No se distribuyen APK ni una app de App Store.
+## Ejecutar localmente
 
-## Ejecutar una copia local en la computadora
+Con Node.js 20 o posterior:
 
-**Opción sencilla en computadora:** descomprimí el proyecto y abrí `dist/index.html`. Banco de palabras, escritura y cuaderno funcionan con los archivos incluidos. El almacenamiento bajo `file://` y las voces varían entre navegadores.
+```sh
+node server.cjs
+```
 
-**Opción recomendada:** con Node.js instalado, ejecutá `node server.cjs` en esta carpeta. En Windows podés abrir `INICIAR-WINDOWS.bat`. Abrí http://localhost:4173. No hace falta `npm install`.
+Abrí http://localhost:4173. No hace falta `npm install`. En Windows se puede usar `INICIAR-WINDOWS.bat`.
 
-Para detener el servidor: Ctrl+C. `npm test` ejecuta las pruebas con Node.js 20 o posterior.
+También podés abrir `dist/index.html` directamente para banco, escritura y cuaderno. El almacenamiento, voz y micrófono en modo archivo dependen del navegador; instalación y caché PWA necesitan HTTPS o localhost.
 
-### Alternativa: acceder al servidor de tu computadora por Wi-Fi
+Para acceder desde otro equipo o celular de la misma red privada:
 
-1. En PowerShell de la computadora: `$env:HOST="0.0.0.0"; node server.cjs`.
-2. Consultá la IPv4 de la computadora con `ipconfig`.
-3. En el celular abrí `http://IP-DE-LA-COMPUTADORA:4173` (reemplazá IP-DE-LA-COMPUTADORA por esa IPv4).
-4. Si Windows pide permiso de firewall, permití únicamente la red privada que estés usando. No abras puertos del router.
+```sh
+node server.cjs --host 0.0.0.0
+```
 
-En esta alternativa por Wi-Fi, la computadora debe permanecer encendida. El micrófono y la caché offline necesitan un contexto seguro: localhost en el propio dispositivo o HTTPS. No están garantizados desde una dirección HTTP de la red local. El resto de las actividades se puede usar por Wi-Fi. No se ha preparado un instalador Android autónomo.
+En el celular abrí `http://IP-DE-LA-COMPUTADORA:4173`, usando la IPv4 de tu equipo. En esta modalidad la computadora debe seguir encendida. La grabación y las funciones PWA pueden no estar disponibles por HTTP de red local. No abras puertos del router. La web pública HTTPS evita depender de una computadora encendida.
 
-## Funciones
+## Funciones y cobertura
 
-- Banco de **56.725 grafías únicas**, unión normalizada de RLA-ES es_ES y es_AR; búsqueda que tolera tildes pero distingue ñ de n, filtro por letras, paginación, selección argentina y favoritas.
-- Selección educativa original con separación silábica editorial, emojis ilustrativos y explicaciones breves. La revisión automatizada comprueba que las sílabas reconstruyen la palabra; no valida su corrección lingüística ni la adecuación terapéutica.
-- Síntesis de voz con preferencia es-AR y filtro de voces locales activado por defecto. No se incluye un motor de voz ni audio humano grabado.
-- Grabación temporal de hasta 30 segundos: escuchar y descargar, sin subir audio ni evaluar automáticamente la pronunciación.
-- Copia, modelo ocultable, dictado, comparación de escritura que conserva tildes y diéresis.
-- Escucha de pares de palabras, por ejemplo pero/perro y pala/para.
-- Cuaderno con dedo, lápiz táctil y mouse: renglones, modelo en imprenta o cursiva del dispositivo, grosor, deshacer, borrar, descarga PNG e impresión.
-- Alternativa de escritura con teclado; navegación con controles HTML accesibles, foco visible y diseño adaptable.
-- Registro local de las últimas 1.000 actividades; se muestran las 30 más recientes. Exportación JSON y borrado confirmado. La exportación incluye favoritas y palabras propias, pero no audios ni dibujos. No existe una función de restauración desde JSON.
-- Importación TXT de palabras (máximo 2 MB, 50.000 entradas propias).
+- **56.725 grafías base** de RLA-ES es_ES y es_AR, sin expansión automática de afijos. No es un diccionario completo de definiciones.
+- **94 palabras en la selección educativa**, con sílabas editoriales, emojis ilustrativos y explicaciones breves. La unión del corpus y selección da **56.737 entradas iniciales**; las palabras propias pueden aumentar el total.
+- Banco inicia en la selección educativa; un adulto puede seleccionar el corpus general, que no está filtrado por edad. Búsqueda que tolera tildes y distingue ñ de n, filtros, paginación y favoritas.
+- Copia/dictado, modelo ocultable y comparación de escritura. Tildes y diéresis importan; mayúsculas/minúsculas no se distinguen.
+- Síntesis de voz del navegador, con preferencia es-AR y solo voces locales por defecto. La existencia, calidad y acento de la voz dependen del sistema.
+- Grabación temporal de hasta 30 segundos, reproducción y descarga voluntaria. No hay análisis automático de pronunciación.
+- Cuaderno de trazado libre, deshacer, grosor, descarga PNG, impresión y escritura alternativa con teclado. Hasta 100 borradores de modelos durante la sesión, no al cerrar o recargar.
+- Registro de las últimas 1.000 actividades, con las 30 más recientes visibles. Exportación y restauración combinada de JSON v1/v2, con validación y resumen previo. Sin audios/dibujos en el registro.
+- Importación TXT de palabras: hasta 2 MB y 50.000 palabras propias. JSON de restauración: hasta 8 MB. Ver [guía](docs/GUIA_DE_USO.md).
 
-## Alcance real
+## Instalación y offline
 
-**No contiene todas las palabras del español ni todas las expresiones argentinas.** Incluye entradas base de dos diccionarios ortográficos abiertos, sin expandir los afijos Hunspell. No es una copia del DLE ni del Diccionario del habla de los argentinos, ni ofrece sus definiciones. El corpus general no está filtrado por edad: un adulto debe seleccionar las palabras antes de trabajar con niños.
+Manifest con iconos PNG 192/512 y Apple 180; botón de instalación cuando el navegador lo ofrece e instrucciones para Android/iOS. No se distribuye APK ni aplicación de App Store.
 
-No es un producto clínicamente validado. No diagnostica, puntúa la articulación ni reemplaza terapia. Los objetivos, selección de contrastes y duración deben adaptarse con el profesional. Las diferencias dialectales argentinas no son errores. El cuaderno ofrece modelos visuales, no secuencias animadas del orden de trazos ni evaluación de motricidad.
+En HTTPS o localhost, se intenta guardar una copia de los archivos. **Comprobar copia y actualizaciones** verifica que la caché esté completa. La primera carga y las actualizaciones requieren conexión; el navegador puede eliminar la caché. Las voces sin conexión requieren voces locales. Instalación/offline real aún pendientes de comprobar en Android/iOS físicos.
 
-## Privacidad y offline
+Una versión nueva queda esperando hasta elegir **Aplicar actualización y recargar**. Descargá antes audio y dibujos temporales. El registro guardado permanece. El worker no limpia cachés de otras apps del mismo dominio. No borres todos los datos del sitio para actualizar.
 
-Los datos se guardan en `localStorage` del navegador y origen utilizados. Otra computadora, otro navegador o el modo incógnito no comparten ese registro. Borrar datos del navegador puede eliminarlo. No ingresar información sensible que no desees conservar allí. La exportación JSON es local y contiene las palabras y fechas registradas.
+## Privacidad
 
-La aplicación no incorpora analítica propia ni envía palabras practicadas, dibujos o grabaciones a un servidor. En la versión publicada, el navegador descarga los archivos de GitHub Pages; GitHub registra la dirección IP de las visitas por motivos de seguridad, según su [documentación](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection). Los enlaces de fuentes abren sitios externos. Si desactivás «solo voces locales», una voz remota del sistema puede usar su proveedor de red. La app no usa reconocimiento de voz remoto.
+La aplicación no sube tus palabras practicadas, audios, dibujos ni registro. Se guarda en el navegador y origen usados, sin sincronización ni perfiles separados para pacientes. Otra persona con acceso al mismo navegador puede ver el registro; no hay contraseña de la app.
 
-Desde HTTPS o localhost, el service worker intenta guardar los archivos para próximas aperturas sin conexión. Esto no garantiza su disponibilidad: el navegador puede restringir o eliminar la caché. Comprobá el funcionamiento en tu dispositivo antes de depender de él. Las voces sin conexión requieren voces locales instaladas.
+Si el almacenamiento falla, se informa y la práctica continúa en memoria para poder exportarla. Un registro ilegible se preserva contra sobrescritura silenciosa. Antes de restaurar, se muestra un resumen y se intenta descargar el registro previo; conservá esa copia. Se detectan cambios en otra pestaña para evitar sobreescrituras.
 
-Para quienes mantienen el proyecto: al modificar archivos publicados, incrementá la versión de caché en `dist/sw.js`. Después de actualizar, cerrá las pestañas de la app y volvé a abrirla con conexión. No borres todos los datos del sitio como primer paso: también podrías perder el registro y las palabras guardadas.
+En la web publicada se solicitan archivos a GitHub Pages. GitHub registra IP por seguridad, según su [documentación](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection). Los enlaces externos requieren Internet. Si se desactiva el filtro de voces locales, el proveedor de voz remoto puede recibir el texto reproducido.
 
-Las grabaciones y los trazos son temporales. Descargalos antes de salir si querés conservarlos. El guardado local no está protegido por una contraseña de la app; otra persona que use el mismo navegador puede acceder al registro.
+## Alcance educativo
 
-## Orden de ejecución seguido
+No contiene todas las palabras del español o del habla argentina. Tampoco reproduce el DLE o las definiciones de la Academia Argentina de Letras. «Uso argentino» no significa exclusivo de Argentina. La segmentación silábica y selección de grupos son editoriales y necesitan revisión profesional; la prueba automática solo confirma que las partes reconstruyen la palabra.
 
-1. Investigación de corpus, licencias y cobertura.
-2. Investigación de técnicas y límites clínicos/educativos.
-3. Diseño e implementación de interfaz y actividades.
-4. Pruebas automatizadas, revisión de código y preparación de pruebas manuales.
-5. Publicación del código en https://github.com/zivoplataforma-maker/habla-local.
+No es un producto clínicamente validado. No diagnostica, califica articulación ni reemplaza terapia. Los objetivos, contrastes y duración deben elegirse con el profesional. Las variantes dialectales argentinas no son errores. El cuaderno no enseña el orden de los trazos ni evalúa motricidad. Para quienes no leen, se necesita acompañamiento.
 
-Detalles: [Investigación](docs/INVESTIGACION.md), [diseño](docs/DISENO.md), [validación](docs/VALIDACION.md) y [pendientes](docs/PENDIENTES.md).
+## Desarrollo y verificación
 
-## GitHub y permisos
+```sh
+npm test
+npm run check
+npm run build
+```
 
-Repositorio: https://github.com/zivoplataforma-maker/habla-local
+Sin compilador ni bundler: `dist/` contiene la web completa. `build` valida sintaxis, recursos y coherencia de la distribución, sin fabricar un bundle. Las pruebas cubren lógica, almacenamiento, juego, captura simulada, servidor y worker simulado; no sustituyen hardware, auditoría completa de accesibilidad o revisión clínica.
 
-El repositorio es público. La cuenta propietaria es `zivoplataforma-maker`. La publicación no añade colaboradores ni concede permisos de escritura a otras personas. La visibilidad pública permite leer y copiar el contenido; no autoriza modificar el repositorio original. ChatGPT trabaja mediante los permisos que el titular autorice.
+`python scripts/build-corpus.py` reconstruye el índice a partir de los originales incluidos. `.github/workflows/pages.yml` verifica y publica `dist/` al cambiar `main` cuando Pages usa GitHub Actions. **No hacer push a main sin autorización: dispara despliegue.**
 
-Para descargar el proyecto, usá Code → Download ZIP o cloná el repositorio. No publicar exportaciones de prácticas ni grabaciones.
+## Licencias y participación
 
-## Licencias y procedencia
+Corpus: Santiago Bosio y colaboradores de RLA-ES. Régimen original GPL-3.0+, LGPL-3.0+ o MPL-1.1+; esta distribución selecciona MPL-2.0. Incluye originales, afijos, avisos, texto de licencia, hashes y transformación. Ver [procedencia](dist/data/SOURCE.md).
 
-Corpus original RLA-ES: Santiago Bosio y colaboradores; multilicencia GPL-3.0+, LGPL-3.0+ o MPL-1.1+. Esta distribución selecciona **MPL-2.0** para los datos y el índice derivado. Se incluyen originales, afijos, avisos, texto de licencia, hashes y script de transformación. Ver [procedencia y licencias del corpus](dist/data/SOURCE.md).
+No se ha concedido una licencia abierta al código propio; su elección requiere decisión del titular. La visibilidad pública no concede por sí sola licencia general para reutilizarlo. Las licencias del corpus se mantienen separadas.
 
-El código propio no tiene una licencia abierta concedida en esta entrega; su elección queda pendiente del titular. La visibilidad pública por sí sola no concede una licencia general de reutilización del código propio. Las condiciones del corpus se mantienen separadas.
-
-## Informar un problema o proponer mejoras
-
-Usá [Issues](https://github.com/zivoplataforma-maker/habla-local/issues) e indicá el dispositivo, navegador, pasos y resultado esperado. Para errores lingüísticos, incluí la palabra y una fuente verificable. No adjuntes nombres de pacientes, grabaciones de menores ni registros personales: los reportes son públicos.
-
-## Desarrollo y publicación
-
-- `npm test`: pruebas automatizadas con Node.js 20 o posterior; el flujo de GitHub usa Node.js 22.
-- `python scripts/build-corpus.py`: reconstruye el índice a partir de los diccionarios incluidos; requiere Python 3.
-- `.github/workflows/pages.yml`: verifica el proyecto y publica únicamente `dist/` en GitHub Pages al actualizar `main`.
-- La pantalla Settings → Pages debe conservar GitHub Actions como origen de publicación.
-
-La publicación exitosa y las pruebas automatizadas no equivalen a una validación visual, de accesibilidad completa o clínica.
+Repositorio de `zivoplataforma-maker`. No se añadieron colaboradores ni se cambiaron permisos. Para reportar errores, usá [Issues](https://github.com/zivoplataforma-maker/habla-local/issues), incluyendo dispositivo, navegador y pasos. Los reportes son públicos: no adjuntes registros privados, nombres de pacientes ni grabaciones de menores.
