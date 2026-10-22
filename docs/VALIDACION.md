@@ -1,6 +1,6 @@
-# Validación · 21 de octubre de 2026
+# Validación · actualizado el 22 de octubre de 2026
 
-## Ejecutado
+## Ejecutado en la versión inicial y su publicación
 
 - `node --check` sobre JavaScript de aplicación y servidor: sin errores sintácticos.
 - `npm test`: 7 pruebas automatizadas, todas aprobadas.
@@ -28,4 +28,10 @@ El navegador del entorno no pudo abrir la vista local; un segundo intento devolv
 
 ## Publicación
 
-Código preparado para el repositorio público https://github.com/zivoplataforma-maker/habla-local, propiedad de zivoplataforma-maker. El acceso conectado confirmó permisos de administración y escritura. Esta carga no agrega colaboradores ni cambia permisos.
+Repositorio público: https://github.com/zivoplataforma-maker/habla-local.
+
+Web: https://zivoplataforma-maker.github.io/habla-local/.
+
+El flujo de publicación del commit `248648d3b895cd0757ac9201851150a0da34ac48` finalizó correctamente tras habilitar Pages; build y deploy exitosos, con 7 pruebas aprobadas. Se verificó una respuesta HTTP 200 y el contenido esperado en la página publicada. Esta comprobación no ejecutó interacciones en el navegador.
+
+La revisión editorial del 22 de octubre actualiza instrucciones para la web publicada, alcance, privacidad y mensajes. No añade evidencia de pruebas clínicas o de compatibilidad móvil completa.
