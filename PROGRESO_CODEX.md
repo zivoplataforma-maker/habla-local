@@ -92,3 +92,6 @@ Base remota f4edf9d; árbol limpio y diff local/remoto idéntico. Usuario probó
 
 ### E8 implementada
 Filtros en details/summary cerrado por defecto; teclado Enter abre y selección R fuerte cambia palabra. Navegación y estaciones SVG propias con texto accesible; favoritas SVG. Estado vacío con acción y público explícito. OG/Twitter/canonical e imagen PNG 1200×630 local. Build pasa (85 IDs). QA responsive completo en E11. Sin cambios al almacenamiento.
+
+### E9 implementada y verificada
+Resumen local por fechas con actividades, días y palabras, tabla imprimible y acción Guardar PDF mediante diálogo del navegador. Vista vacía y fechas inválidas claras. Entradas se insertan con textContent. Conteos no interpretan fonemas ni resultados clínicos. 27 tests pasan; QA navegador genera resumen vacío y luego perro/Pronunciación con conteo 1 tras actividad real de prueba. Acción imprimir ejecutada sin error, pero el entorno cloud no muestra el diálogo ni permite verificar PDF físico; se registra ese límite. Estilos print con cabeceras repetidas y filas indivisibles.

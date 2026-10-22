@@ -100,7 +100,7 @@ Usuario confirma prueba inicial Android/Chrome, sin revisión exhaustiva. Solici
 - Verificar: navegador, responsive y build. Recuperar: revertir etapa sin cambiar almacenamiento.
 
 ### E9 — Resumen imprimible (9)
-- [ ] Objetivo: vista por período de fechas con cantidades por actividad/palabra y salida de impresión/guardar PDF del navegador.
+- [x] Objetivo: vista por período de fechas con cantidades por actividad/palabra y salida de impresión/guardar PDF del navegador.
 - Depende E8. Archivos: report.js, app, index, CSS y tests. No inferir fonemas, diagnósticos, calidad o avances clínicos a partir del registro. No enviar datos.
 - Riesgos: límites de fechas y zona horaria, contenido inyectado, páginas truncadas. Aceptación: incluir días completos locales, vacíos y fechas inválidas claras, datos correctos, salida legible sin navegación ni controles.
 - Verificar: tests de fechas/conteos/Unicode/no mutación y QA de vista/estilos de impresión. Recuperar: revertir módulo; historial intacto.
