@@ -47,7 +47,7 @@ Evolucionar la versión aprobada hacia un espacio visual y lúdico para 4–16 a
 - Recuperación: restaurar módulos afectados desde commits locales.
 
 ### E4 — Instalación, offline y actualización (P2)
-- [ ] Objetivo: manifest completo y caché acotada; nueva versión se aplica cuando usuario decide.
+- [x] Objetivo: manifest completo y caché acotada; nueva versión se aplica cuando usuario decide.
 - Dependencias: E3. Archivos: sw.js, pwa.js, manifest, iconos, index.
 - Conservar: rutas relativas para Pages/subdominio y ejecución file://. Riesgo: mezcla de recursos y pérdida de sesión.
 - Aceptación: PNG 192/512 + Apple 180, estado de archivos cacheados verificable, controles instalar/actualizar, no borrar cachés de otras apps ni recargar sin elección.

@@ -8,3 +8,4 @@ body{background:#faf9f3}button{border-radius:13px}button:active:not(:disabled){t
 @media(max-width:360px){.adventure-hero h1{font-size:36px}.station strong{font-size:19px}.station{padding:15px 11px}.station-map{gap:9px}.shell>header .pill{display:none}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media print{.journey-complete{display:none!important}}
+.status-chip{font-size:10px;color:#47634a;white-space:nowrap}#checkUpdates{margin-top:12px}#updateNotice button{font-size:12px}@media(max-width:600px){.status-chip{display:none}}

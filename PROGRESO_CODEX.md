@@ -36,3 +36,11 @@
 - Servidor usa ruta real para bloquear enlaces simbólicos externos; métodos GET/HEAD; tipos MIME PNG; dev portable con --host y puerto efímero para pruebas.
 - Evidencia: 20/20 tests; sintaxis correcta. Flujos UI finales se revisarán al completar E4 (para no probar con la caché vieja).
 - Etapa activa E4: instalación y offline con cambio de versión explícito.
+
+## E4 completada — PWA y caché
+
+- Manifest con rutas relativas, scope/id, PNG propios 192/512 maskable y Apple 180. Botón de instalación cuando el navegador lo permite e instrucciones para Safari/Android.
+- Worker 1.1.0 con caché completa de recursos, estado comprobable mediante mensaje y scope exclusivo. No intercepta ni elimina cachés de otras aplicaciones del origen. Las cachés heredadas ambiguas se conservan por seguridad.
+- No usa skipWaiting automático: la UI avisa y ofrece aplicar/recargar, con advertencia sobre audio y borradores. Registro local intacto.
+- Evidencia: 24/24 tests; worker probado en entorno Node simulado: instalación, STATUS, actualización explícita, navegación offline y aislamiento. Iconos verificados por dimensiones PNG. No equivale a prueba física de instalación/offline.
+- Navegador local confirma integración de scripts y render a 1363 px sin desbordamiento horizontal. Etapa activa E5: verificación de flujos, tamaños y documentación.
