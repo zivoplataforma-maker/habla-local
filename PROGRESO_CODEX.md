@@ -102,3 +102,11 @@ Guía opcional cerrada por defecto con 27 mayúsculas vectoriales propias (inclu
 
 ### E11 verificación local completada — publicación pendiente
 Versión 1.2.0, 29/29 tests y build, 102 IDs únicos. QA seis secciones a 320/390/768/1024 sin overflow, guía/resumen abiertos; alfabeto completo inspeccionado. Se documentan límites de impresión, dispositivos físicos y revisión profesional. SVG estables en navegación/estaciones/favoritas/acciones principales; caché incluye icons/report/tracing y social PNG. Pauta para amigos creada. No se alteran módulos core/storage/audio ni formato de copias. Próxima acción: verificar HEAD remoto, subir commits de etapas con lease y comprobar Tests/Pages/recursos HTTPS.
+
+## E8–E11 cerradas — versión 1.2.0 publicada
+
+Se subieron cuatro etapas sin force ni cambios de permisos, con árboles remotos idénticos a los locales: 30f995f (claridad), 895e43c (resumen), 1a48a4c (guía) y d1cc3abe187cd60f55d925d7fb51b9609624e865 (release). Main anterior f4edf9d preservado.
+
+Tests 39822081480 completed/success. Pages 39822081494: build y deploy completed/success. Comprobación posterior a despliegue: index.html, sw.js, icons.js, report.js, tracing.js, atelier.css y social-card.png HTTP 200 e idénticos byte por byte. La primera comprobación durante deploy mostró archivos previos/404; se repitió después de su finalización y pasó.
+
+Preview detenido, distribución sin páginas de QA temporales. Todas las etapas ejecutables completadas. Pendientes externos: prueba física de PDF, voces/micrófono/offline/instalación en dispositivos de amigos; revisión docente/profesional de modelos y contenido. Sin nueva autorización necesaria. Próxima acción: reunir observaciones con docs/PRUEBAS_AMIGOS.md y corregir fallos reproducibles.

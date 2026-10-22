@@ -113,6 +113,6 @@ Usuario confirma prueba inicial Android/Chrome, sin revisión exhaustiva. Solici
 - Verificar: integridad del alfabeto y pasos, QA visual/teclado, regresión de lienzo. Recuperar: retirar guía sin alterar dibujos ni datos.
 
 ### E11 — Validación, documentación y publicación
-- [ ] Depende E8–E10. Suite/build completos, QA 320/390/768/1024 y escritorio, cambios en commits, cache y versión coherentes, documentación actual. Push autorizado; lease remoto y CI/Pages.
+- [x] Depende E8–E10. Suite/build completos, QA 320/390/768/1024 y escritorio, cambios en commits, cache y versión coherentes, documentación actual. Push autorizado; lease remoto y CI/Pages.
 - Riesgos: caché incompleta, interpretación clínica. Recuperación: revertir commits, conservar clave de datos.
 - Pruebas físicas posteriores: usuario/amigos; no bloquear trabajo local ni presentar esas pruebas como realizadas.

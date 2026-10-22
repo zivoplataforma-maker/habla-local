@@ -54,3 +54,5 @@ Guía: Ñ con cuatro pasos por Enter, pausa true/false, Calma bloquea reproducci
 Seis secciones a 320/390/768/1024: scrollWidth=clientWidth, también guía y resumen abiertos. Escritorio revisado visualmente. No equivale a auditoría WCAG ni pruebas físicas. Imagen social PNG 1200×630 inspeccionada. No se verificó caché de previews de WhatsApp/Facebook.
 
 Usuario reporta primera prueba Android/Chrome, no exhaustiva. Pruebas físicas más amplias se harán con amigos; pauta en PRUEBAS_AMIGOS.md. Sin nuevas dependencias ni peticiones externas desde el diseño, guía o resumen.
+
+Publicación 1.2.0: Tests 39822081480 y build/deploy Pages 39822081494 exitosos. Los siete recursos públicos críticos (HTML, worker, CSS, módulos icons/report/tracing e imagen social) devolvieron HTTP 200 y coincidieron byte por byte tras la publicación.
