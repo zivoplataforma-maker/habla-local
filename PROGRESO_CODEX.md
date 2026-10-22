@@ -86,3 +86,9 @@ Inspección: árbol limpio, arquitectura y controles conservados. Investigación
 
 ## E7 publicada y comprobada
 Commit funcional 8dfaa57e77d705ea4e0468fe8c65d1d9edff881e en main; lease respetado. Tests: ejecución 39805757366 completed/success. Pages: ejecución 39805757748, build y deploy completed/success. HTML, CSS nuevo, worker, SVG y fuente pública comprobados por HTTPS, idénticos byte a byte a los locales. Rama entrega-1.1.1 sincronizada con main; preview detenido. No hay bloqueos nuevos. Continúan pendientes únicamente las comprobaciones físicas y profesionales ya documentadas.
+
+## Inicio E8–E11 — mejoras 4 a 10
+Base remota f4edf9d; árbol limpio y diff local/remoto idéntico. Usuario probó inicialmente Android/Chrome. Trabajo en etapas: claridad visual, resumen local imprimible, guía opcional de 27 mayúsculas y cierre/Pages. Sin dependencias nuevas. Consultadas fuentes primarias Open Graph (ogp.me) e IES guía 17; no se atribuye validación de nuestros modelos gráficos a esas fuentes.
+
+### E8 implementada
+Filtros en details/summary cerrado por defecto; teclado Enter abre y selección R fuerte cambia palabra. Navegación y estaciones SVG propias con texto accesible; favoritas SVG. Estado vacío con acción y público explícito. OG/Twitter/canonical e imagen PNG 1200×630 local. Build pasa (85 IDs). QA responsive completo en E11. Sin cambios al almacenamiento.

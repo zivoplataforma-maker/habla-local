@@ -88,3 +88,31 @@ Siguiente tarea: comprobar la versión en Android/iOS físicos y revisar objetiv
 - Riesgos: desbordamiento, distracción, contraste, caché incompleta. Aceptación: todas las funciones conservadas, lectura clara, móviles sin overflow, fuente disponible offline.
 - Verificar: suite completa/build, navegador escritorio y 320/390/768/1024, navegación y controles. Recuperar: revertir commit visual sin tocar almacenamiento.
 - Publicar al finalizar por autorización vigente; verificar Pages.
+
+## Ampliación autorizada — mejoras 4 a 10 (22/10/2026)
+
+Usuario confirma prueba inicial Android/Chrome, sin revisión exhaustiva. Solicita implementar 4–10 y compartir luego con amigos para pruebas físicas.
+
+### E8 — Claridad de interfaz y enlaces (4–8)
+- [x] Objetivo: filtros desplegables cerrados inicialmente, SVG uniformes, estados vacíos accionables, público explícito y metadatos sociales con imagen.
+- Prioridad: UX, depende de E7. Archivos: index, app, CSS, icons, assets. Conservar: filtros/IDs, navegación, privacidad, datos, corpus.
+- Riesgos: controles ocultos inaccesibles, iconos sin nombre, metadatos sin imagen real. Aceptación: teclado abre filtros; todos siguen funcionando; nombres accesibles; primera acción visible; OG con PNG 1200×630.
+- Verificar: navegador, responsive y build. Recuperar: revertir etapa sin cambiar almacenamiento.
+
+### E9 — Resumen imprimible (9)
+- [ ] Objetivo: vista por período de fechas con cantidades por actividad/palabra y salida de impresión/guardar PDF del navegador.
+- Depende E8. Archivos: report.js, app, index, CSS y tests. No inferir fonemas, diagnósticos, calidad o avances clínicos a partir del registro. No enviar datos.
+- Riesgos: límites de fechas y zona horaria, contenido inyectado, páginas truncadas. Aceptación: incluir días completos locales, vacíos y fechas inválidas claras, datos correctos, salida legible sin navegación ni controles.
+- Verificar: tests de fechas/conteos/Unicode/no mutación y QA de vista/estilos de impresión. Recuperar: revertir módulo; historial intacto.
+
+### E10 — Demostración opcional de trazos (10)
+- [ ] Objetivo: guía de las 27 letras de imprenta mayúscula española con inicios numerados, dirección animada, pausa y pasos manuales.
+- Depende E9. Archivos: tracing.js, index, app, CSS y tests. Conservar modelos libres minúscula/mayúscula/cursiva y lienzo.
+- Alcance educativo: un ejemplo posible de construcción, no método universal ni validación motriz; seguir modelo de docente/profesional. Cursiva y minúscula guiadas fuera de esta entrega, identificadas en UI.
+- Riesgos: modelo confuso, distracción, animación persistente. Aceptación: 27 letras seleccionables, animación solo solicitada, pausa al salir/cambiar, pasos con teclado y motion reducido, sin borrar trazos.
+- Verificar: integridad del alfabeto y pasos, QA visual/teclado, regresión de lienzo. Recuperar: retirar guía sin alterar dibujos ni datos.
+
+### E11 — Validación, documentación y publicación
+- [ ] Depende E8–E10. Suite/build completos, QA 320/390/768/1024 y escritorio, cambios en commits, cache y versión coherentes, documentación actual. Push autorizado; lease remoto y CI/Pages.
+- Riesgos: caché incompleta, interpretación clínica. Recuperación: revertir commits, conservar clave de datos.
+- Pruebas físicas posteriores: usuario/amigos; no bloquear trabajo local ni presentar esas pruebas como realizadas.
