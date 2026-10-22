@@ -21,7 +21,7 @@ Evolucionar la versión aprobada hacia un espacio visual y lúdico para 4–16 a
 ## Etapas
 
 ### E1 — Integridad y recuperación de datos (P1)
-- [ ] Objetivo: validar y restaurar copias JSON, conservar datos previos al fallar lectura/escritura.
+- [x] Objetivo: validar y restaurar copias JSON, conservar datos previos al fallar lectura/escritura.
 - Dependencias: ninguna. Archivos: core.js, nuevo storage.js, app.js, tests.
 - Alcance: versiones 1/2, mezcla sin duplicados, previsualización/confirmación, backup previo local descargable, límites.
 - Conservar: clave heredada, datos válidos, formatos de audio, licencias. Riesgo: migración/duplicación.

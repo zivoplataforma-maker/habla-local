@@ -1,0 +1,9 @@
+const {test}=require('node:test'),assert=require('node:assert/strict');
+const S=require('../dist/storage.js');
+const row={word:'perro',kind:'Pronunciación',at:1000};
+const data={favorites:['ÁRBOL','árbol'],custom:['mate'],history:[row]};
+test('restaura formato heredado y copia v2 sin perder datos',()=>{const clean=S.validate(data);assert.deepEqual(clean.favorites,['árbol']);assert.deepEqual(S.parse(S.serialize(clean)),clean);assert.deepEqual(S.parse(JSON.stringify({version:1,...data})),clean)});
+test('copia inválida no muta registro y rechaza futuro, tamaño y versión',()=>{const before=JSON.stringify(data);for(const bad of [{...data,version:999},{...data,custom:['<script>']},{...data,history:[{...row,at:Date.now()+172800000}]},{...data,history:[{...row,kind:'inventado'}]}])assert.throws(()=>S.validate(bad));assert.throws(()=>S.parse('{'));assert.equal(JSON.stringify(data),before)});
+test('mezcla idempotente conserva orden y contabiliza límite de 1000',()=>{let a=S.merge(data,{...data,history:[row,{...row,at:2000}]}).state;assert.equal(a.history.length,2);assert.deepEqual(S.merge(a,a).state,a);const many={...S.empty(),history:Array.from({length:1000},(_,at)=>({...row,at}))};const merged=S.merge(many,{...S.empty(),history:[{...row,at:1001}]});assert.equal(merged.omitted,1);assert.equal(merged.state.history[0].at,1)});
+test('un JSON ilegible queda protegido, no se sobrescribe en silencio',()=>{let raw='{datos';const storage={getItem:()=>raw,setItem:(_,v)=>raw=v};const read=S.read(storage);assert.equal(read.locked,true);assert.throws(()=>S.write(storage,S.empty(),read.locked));assert.equal(raw,'{datos');assert.equal(read.raw,raw)});
+test('falla de escritura no se oculta y lectura sin permiso conserva estado seguro',()=>{const storage={getItem:()=>{throw Error('sin permiso')},setItem:()=>{throw Error('cuota')}};assert.equal(S.read(storage).locked,true);assert.throws(()=>S.write(storage,data),/cuota/)});

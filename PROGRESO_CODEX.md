@@ -10,3 +10,11 @@
 - Defectos y riesgos clasificados en PLANS.md. Sin exposición de secretos ni modificaciones durante inspección.
 - Etapa activa: E1, integridad/recuperación. Próxima acción: añadir validación de estado y tests antes de integrar restauración UI.
 - Producción: sin modificaciones. Publicación bloqueada por autorización separada según instrucción del titular.
+
+## E1 completada — Integridad y recuperación
+
+- Se añadió storage.js con validación estricta y compatibilidad con clave/formato heredados, exportación v2 y mezcla idempotente.
+- Restauración con resumen y confirmación, descarga previa del registro original; una copia inválida o escritura fallida no reemplaza el estado.
+- Un JSON corrupto queda protegido contra sobrescritura silenciosa y puede descargarse intacto. Detección de cambios en otra pestaña para evitar sobreescrituras.
+- Evidencia: 12/12 pruebas aprobadas (7 existentes + 5 de almacenamiento). No se tocaron datos reales del usuario.
+- Etapa activa: E2. Próxima acción: presentación por franjas, misiones y juego silábico accesible.
